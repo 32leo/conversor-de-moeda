@@ -1,8 +1,9 @@
 // obter valores de entrada informados élo usuario
 document.getElementById('currency-form').addEventListener('submit', function(event){
      event.preventDefault(); 
-    const valor = parseFloa (document.getElementById('fromCurrency').value);
-    const daMoeda = document.getElementById('paraMoeda').value;
+    const valor = parseFloat(document.getElementById('valor').value);
+    const daMoeda = document.getElementById('daMoeda').value;
+    const paraMoeda = document.getElementById('paraMoeda').value;
 
     // definir taxas de cambio fixas
     const exchangeRates = {
@@ -20,7 +21,7 @@ document.getElementById('currency-form').addEventListener('submit', function(eve
         valorConvertido = valor * exchangeRates[daMoeda][paraMoeda];
     }
 
-    const conversao = document.getElementById('conversao')
-    
+    const conversao = document.getElementById('conversao');
+    conversao.textContent = `Resultado:${valorConvertido.toFixed(2)} ${paraMoeda}`;
 
 });

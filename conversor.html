@@ -1,44 +1,49 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="main.js">
-
-    
-    <title>Conversor de Moeda</title>
-    <style>
-       
-    </style>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Conversor De Moedas</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="main.css" />
 </head>
 <body>
-
-<div class="container">
-    <h1>Conversor de Moeda</h1>
-
-    <input type="number" id="amount" placeholder="Valor" />
-
-    <select id="fromCurrency">
-        <label for="daMoeda">de</label>
-        <option value="BRL">Real Brasileiro (BRL)</option>
-        <option value="USD">Dólar Americano (USD)</option>
-        <option value="EUR">Euro (EUR)</option>
-        <option value="GBP">Libra Esterlina (GBP)</option>
-    </select>
-
-    <select id="toCurrency">
-        <option value="USD">Dólar Americano (USD)</option>
-        <option value="BRL">Real Brasileiro (BRL)</option>
-        <option value="EUR">Euro (EUR)</option>
-        <option value="GBP">Libra Esterlina (GBP)</option>
-    </select>
-
-    <button onclick="convert()">Converter</button>
-
-    <div class="result" id="result"></div>
-</div>
-
-
+    <div id="form">
+        <h1 style=>Conversor De Moedas</h1>
+        <div id="input-box">
+            <form id="currency-form">
+                <div id="texts">
+                    <label for="valor">Valor</label>
+                    <input required type="number" id="valor" />
+                </div>
+                <div id="texts">
+                    <label for="Damoeda">De</label>
+                    <select id="daMoeda">
+                        <option value="BRL">Reais (BRL)</option>
+                        <option value="USD">Dólar (USD)</option>
+                        <option value="EUR">Euros (EUR)</option>
+                    </select>
+                </div>
+                <div id="texts">
+                    <label for="Paramoeda">Para</label>
+                    <select id="paraMoeda">
+                        <option value="BRL">Reais (BRL)</option>
+                        <option value="USD">Dólar (USD)</option>
+                        <option value="EUR">Euros (EUR)</option>
+                    </select>
+                </div>
+                <h2 id="Resultado"></h2>
+                <div id="button-continue">
+                    <button type="submit">Converter</button>
+                </div>
+                <div id="limpar">
+                    <button type="button" onclick="document.getElementById('valor').value=''">Limpar</button>
+                </div>
+                <div id="conversao"></div>
+            </form>
+        </div>
+    </div>
+ 
+    <script src="main.js"></script>
 </body>
 </html>
