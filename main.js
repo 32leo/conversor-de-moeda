@@ -16,6 +16,11 @@ document.getElementById('currency-form').addEventListener('submit', function(eve
     let valorConvertido;
     if(daMoeda === paraMoeda){
         valorConvertido;
+    }else{
+        valorConvertido = valor * exchangeRates[daMoeda][paraMoeda];
     }
+
+    const conversao = document.getElementById('conversao')
+    
 
 });
