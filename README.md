@@ -1,6 +1,6 @@
 <h1>Convertidor de moneda </h1>
 
-![](Gravando%20.mp4)
+![](moneda.png)
 
 <h2>Este es un proyecto simple de conversor de divisas que permite al usuario convertir valores de una moneda a otra utilizando tipos de cambio actualizados en tiempo real.</h2>
 
@@ -75,6 +75,17 @@ realize un cidigo el en HTML para poder funcionar el cidogo
 2. Ingrese el valor a convertir.
 
 3. El programa mostrará el monto convertido según el tipo de cambio actual.
+
+sitaciones:
+
+
+
+
+![Queijitos](https://github.com/Queijitos)
+
+
+
+
 
 
 
