@@ -1,16 +1,16 @@
-<h1>Conversor de moeda </h1>
+<h1>Convertidor de moneda </h1>
 
-![](tela.png)
+![](Gravando%20.mp4)
 
-<h2>Este é um projeto simples de Conversor de Moeda que permite ao usuário converter valores de uma moeda para outra usando taxas de câmbio atualizadas em tempo real.</h2>
+<h2>Este es un proyecto simple de conversor de divisas que permite al usuario convertir valores de una moneda a otra utilizando tipos de cambio actualizados en tiempo real.</h2>
 
 
  # FUNCIONALIDADES
 
 
-* Conversão de moeda em tempo real: Converte valores entre diversas moedas com base na taxa de câmbio atual.
-* fácil de usar para inserir valores e selecionar as moedas de origem e destino.
-* Atualização automática das taxas de câmbio: As taxas são atualizadas automaticamente, garantindo uma conversão precisa.
+* Conversión de moneda en tiempo real: Convierte valores entre múltiples monedas según el tipo de cambio actual.
+* Fácil de usar para ingresar valores y seleccionar monedas de origen y destino.
+* Actualizar automáticamente los tipos de cambio: los tipos se actualizan automáticamente, lo que garantiza una conversión precisa.
 
 # tecnologias usadas 
 * ## html
@@ -18,11 +18,16 @@
 * ## git gub
 
 
-# como instalar e executar 
+# como instalar y ejecutar  
 
-1. clone o repositorio
+1. copie el repositorio
 
-obter valores de entrada informados élo usuario
+```
+https://github.com/32leo/conversor-de-moeda?tab=readme-ov-file#conversor-de-moeda-
+```
+2. copie los codigos del javaSript
+
+
 
 ```
 document.getElementById('currency-form').addEventListener('submit', function(event){
@@ -33,3 +38,46 @@ document.getElementById('currency-form').addEventListener('submit', function(eve
 
 
 ```
+
+
+defini tasas de cambio fixas 
+
+ ```
+ const exchangeRates = {
+        USD:{BRL:5.70, EUR:0.93},
+        BRL:{USD:0.18, EUR:0.16},
+        EUR:{USD:1.08, BRL:6.16}, 
+
+ ```
+conversión de moneda sencilla
+
+```
+let valorConvertido;
+    if(daMoeda === paraMoeda){
+        valorConvertido;
+    }else{
+        valorConvertido = valor * exchangeRates[daMoeda][paraMoeda];
+    }
+
+    const conversao = document.getElementById('conversao');
+    conversao.textContent = `Resultado:${valorConvertido.toFixed(2)} ${paraMoeda}`;
+
+});
+
+```
+
+realize un cidigo el en HTML para poder funcionar el cidogo
+
+
+# COMO USAR
+1. Seleccione la moneda de origen y la moneda de destino.
+
+2. Ingrese el valor a convertir.
+
+3. El programa mostrará el monto convertido según el tipo de cambio actual.
+
+
+
+
+
+
